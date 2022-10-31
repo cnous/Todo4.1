@@ -4,3 +4,6 @@ django-filter
 drf-yasg
 djoser
 djangorestframework_simplejwt
+pytest
+pytest-django
+black

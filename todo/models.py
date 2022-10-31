@@ -14,10 +14,10 @@ class Task(models.Model):
     complete = models.BooleanField(default=False)
 
     def get_absolute_url(self):
-        return reverse('task_list')
+        return reverse("task_list")
 
     def __str__(self):
         return self.title
 
     class Meta:
-        order_with_respect_to = 'user'
+        order_with_respect_to = "user"
