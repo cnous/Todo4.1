@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "pytest",
     "pytest_django",
+    'faker',
 ]
 
 MIDDLEWARE = [

@@ -7,3 +7,4 @@ djangorestframework_simplejwt
 pytest
 pytest-django
 black
+faker
