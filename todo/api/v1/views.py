@@ -22,3 +22,4 @@ class TaskDetail(RetrieveUpdateDestroyAPIView):
     serializer_class = TaskSerializer
     queryset = Task.objects.all()
     lookup_field = "id"
+
