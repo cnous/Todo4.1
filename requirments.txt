@@ -1,6 +1,7 @@
-django
-djangorestframwork
+django==4.0.6
+djangorestframework
 django-filter
+ruamel.yaml.clib
 drf-yasg
 djoser
 djangorestframework_simplejwt
@@ -11,3 +12,4 @@ faker
 redis
 celery
 django-redis
+django-celery-beat

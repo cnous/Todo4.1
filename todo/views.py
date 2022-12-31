@@ -7,6 +7,7 @@ from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
+
 class TaskList(LoginRequiredMixin, ListView):
     model = Task
     context_object_name = "tasks"
@@ -55,3 +56,6 @@ class DeleteTask(LoginRequiredMixin, DeleteView):
 
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user)
+
+# def delet_task():
+#     deleteTask.delay()

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'celery',
     'redis',
     'django_redis',
+    'django_celery_beat'
 ]
 
 MIDDLEWARE = [
@@ -209,6 +210,9 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_LIFETIME": timedelta(days=1),
 }
 
+# celery configs
+CELERY_BROKER_URL = 'redis://redis:6379/2'
+
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -218,3 +222,11 @@ CACHES = {
         }
     }
 }
+
+CELERY_BEAT_SCHEDULE = {
+    'delet_task':{
+        'task':'todo.tasks.deleteTask',
+        'schedule':600,
+    }
+}
+
