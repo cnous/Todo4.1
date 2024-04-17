@@ -13,3 +13,4 @@ redis
 celery
 django-redis
 django-celery-beat
+sqlparse>=0.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
