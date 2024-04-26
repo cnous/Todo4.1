@@ -13,3 +13,4 @@ redis
 celery
 django-redis
 django-celery-beat
+social-auth-app-django>=5.4.1 # not directly required, pinned by Snyk to avoid a vulnerability
